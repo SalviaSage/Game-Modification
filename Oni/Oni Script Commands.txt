@@ -1,0 +1,1538 @@
+============================================
+var: sky_height
+============================================
+var: sky_show_planet
+============================================
+var: sky_show_stars
+============================================
+var: sky_show_skybox
+============================================
+var: sky_show_clouds
+============================================
+var: sky_show_sky
+============================================
+var: am_hit_everything
+============================================
+var: am_invert
+============================================
+var: am_show_filenames
+============================================
+var: am_show_axes
+============================================
+var: am_show_closest
+============================================
+var: gl_disable_depth_reads
+============================================
+command: gl_fog_end_changeto
+desc: changes the fog end distance smoothly
+param: end_val:float [frames:int | ]
+============================================
+command: gl_fog_start_changeto
+desc: changes the fog start distance smoothly
+param: start_val:float [frames:int | ]
+============================================
+var: gl_fog_blue
+============================================
+var: gl_fog_green
+============================================
+var: gl_fog_red
+============================================
+var: gl_fog_start
+============================================
+var: gl_fog_end
+============================================
+var: ui_suppress_prompt
+============================================
+command: ui_flash_element
+desc: sets part of the HUD to flash or not flash
+param: element_name:string fill:int
+============================================
+command: ui_fill_element
+desc: sets part of the HUD to completely filled
+param: element_name:string fill:int
+============================================
+command: ui_show_element
+desc: shows or hides part of the HUD
+param: element_name:string show:int
+============================================
+command: ui_show_help
+desc: debugging: enables the HUD help overlays
+param: enable:int
+============================================
+command: text_console
+desc: Turns on the text console display
+param: name:string
+============================================
+var: target_max_distance
+============================================
+command: target_set
+desc: Sets the target to the specified flag
+param: flag_id:int min_distance:float
+============================================
+command: objective_complete
+desc: Plays the objective-complete sound.
+param: 
+============================================
+command: objective_set
+desc: Sets the current objective page.
+param: page:int [make_silent:string{"silent"} | ]
+============================================
+command: diary_page_unlock
+desc: Unlocks a specific diary page on the current level.
+param: page:int
+============================================
+command: movie_play
+desc: function to start a movie playing
+param: name:string
+============================================
+command: sound_objects_reset
+desc: reloads the sounds objects
+param: 
+============================================
+command: sound_list_broken_links
+desc: function writes a list of sounds which have broken links to a file
+param: 
+============================================
+command: sound_impulse_play
+desc: function plays an impulse sound
+param: name:string [volume:float | ]
+============================================
+command: sound_ambient_volume
+desc: function to set the volume of a playing ambient sound
+param: name:string volume:float [time:float | ]
+============================================
+command: sound_ambient_stop
+desc: function to stop an ambient sound
+param: name:string
+============================================
+command: sound_ambient_start
+desc: function to start an ambient sound
+param: name:string [volume:float | ]
+============================================
+command: sound_dialog_play_interrupt
+desc: function to interrupt the current character dialog and play a new one
+param: name:string
+============================================
+command: sound_dialog_play_block
+desc: function to start character dialog playing after the current dialog finishes
+param: name:string
+============================================
+command: sound_dialog_play
+desc: function to start character dialog playing
+param: name:string
+============================================
+command: sound_music_volume
+desc: function to set the volume of playing music
+param: name:string volume:float [time:float | ]
+============================================
+command: sound_music_stop
+desc: function to stop playing music
+param: name:string
+============================================
+command: sound_music_start
+desc: function to start music playing
+param: name:string [volume:float | ]
+============================================
+command: cinematic_stop
+desc: stop the display of a cinematic insert
+param: bitmap_name:string end:int velocity:float
+============================================
+command: cinematic_start
+desc: start the display of a cinematic insert
+param: bitmap_name:string draw_width:int draw_height:int start:int end:int velocity:float mirror:bool
+============================================
+var: cinematic_yoffset
+============================================
+var: cinematic_xoffset
+============================================
+var: show_turrets
+============================================
+var: turret_show_debug
+============================================
+var: laser_alpha
+============================================
+var: show_triggers
+============================================
+var: show_sound_rectangles
+============================================
+var: show_sound_spheres
+============================================
+var: show_sound_all
+============================================
+var: patrolpath_name_distance
+============================================
+var: show_patrolpaths
+============================================
+command: flag_view_prefix
+desc: View flags with a specific prefix
+param: prefix:string
+============================================
+var: flag_name_distance
+============================================
+var: show_flags
+============================================
+var: flag_new_id
+============================================
+var: door_pop_lighting
+============================================
+var: door_show_activation
+============================================
+var: door_ignore_locks
+============================================
+var: door_show_debug
+============================================
+var: character_name_distance
+============================================
+var: show_characters
+============================================
+command: script_reload
+desc: reload scripts for a level
+param: 
+============================================
+var: sc_bind_f3
+============================================
+var: sc_bind_f2
+============================================
+command: sc_focus
+desc: sets which character we're authoring for a film
+param: chr_index:int
+============================================
+command: lock_keys
+desc: locks keys out
+param: (null)
+============================================
+command: splash_screen
+desc: displays a splash screen
+param: texture:string
+============================================
+command: message_remove
+desc: removes a currently displayed message
+param: [message:string | ]
+============================================
+command: message
+desc: sends a message from the subtitle file
+param: message:string [timer:int]
+============================================
+command: restore_game
+desc: restores the game
+param: 
+============================================
+command: save_game
+desc: saves the game
+param: save_point:int [type:string{"autosave"} | ]
+============================================
+command: timer_stop
+desc: starts the countdown timer
+param: 
+============================================
+command: timer_start
+desc: starts the countdown timer
+param: duration:float script:string
+============================================
+command: slowmo
+desc: starts the slowmotion timer
+param: duration:int
+============================================
+command: lose
+desc: lose this level
+param: (null)
+============================================
+command: win
+desc: win this level
+param: (null)
+============================================
+command: dmsg
+desc: debugging message
+param: astring:string
+============================================
+command: dprint
+desc: debugging print
+param: astring:string
+============================================
+command: cutscene_sync
+desc: marks a point in a cutscene
+param: (null)
+============================================
+command: end_cutscene
+desc: ends a cutscene
+param: 
+============================================
+command: begin_cutscene
+desc: begins a cutscene
+param: (null)
+============================================
+command: env_shade
+desc: sets the shade of a block of objects
+param: gq_ref:int gq_ref:int r:float g:float b:float
+============================================
+command: env_show
+desc: turns on or off specified parts of the environment
+param: gq_ref:int on_off:int{0 | 1}
+============================================
+command: env_texswap
+desc: swaps an environment texture
+param: gq_start:int tex_name:string
+============================================
+command: fade_out
+desc: fades the screen out
+param: [r:float | r:int] [g:float | g:int] [b:float | b:int] ticks:int
+============================================
+command: fade_in
+desc: fades the screen in
+param: ticks:int
+============================================
+command: input
+desc: turns input on or off
+param: on_off:int{0 | 1}
+============================================
+command: letterbox
+desc: starts or stops letterboxing
+param: start_stop:int{0 | 1}
+============================================
+command: env_setanim_block
+desc: sets up an animation for an object
+param: obj_id:int object_name:string
+============================================
+command: env_setanim
+desc: sets up an animation for an object
+param: obj_id:int object_name:string
+============================================
+command: env_anim_block
+desc: initiates a environment animation: blocks until completed
+param: obj_id:int [ obj_id:int | ]
+============================================
+command: env_anim
+desc: initiates a environment animation: blocks until completed
+param: obj_id:int [ obj_id:int | ]
+============================================
+command: obj_create
+desc: creates a range of objects
+param: obj_id:int [ obj_id:int | ]
+============================================
+command: obj_kill
+desc: kills a range of object
+param: obj_id:int [ obj_id:int | ]
+============================================
+command: obj_shade
+desc: turns display of an object on or off
+param: obj_id:int obj_id:int r:float g:float b:float
+============================================
+command: obj_force_draw
+desc: locks an object as visible
+param: obj_id:int [ obj_id:int | ]
+============================================
+command: obj_show
+desc: turns display of an object on or off
+param: obj_id:int [ obj_id:int | ]
+============================================
+command: obj_hide
+desc: turns display of an object on or off
+param: obj_id:int [ obj_id:int | ]
+============================================
+command: cm_reset
+desc: resets the camera
+param: [maxspeed:float | ] [maxFocalAccel:float | ]
+============================================
+command: cm_wait
+desc: makes the camera wait until it is no longer busy
+param: 
+============================================
+command: cm_detach
+desc: detaches the camera
+param: 
+============================================
+command: cm_orbit_block
+desc: puts the camera in orbit mode
+param: speed:float [stopangle:float| ]
+============================================
+command: cm_orbit
+desc: puts the camera in orbit mode
+param: speed:float [stopangle:float | ]
+============================================
+command: cm_interpolate_block
+desc: initiates a camera interpolation
+param: anim_name:string num_frames:int
+============================================
+command: cm_interpolate
+desc: initiates a camera interpolation
+param: anim_name:string num_frames:int
+============================================
+command: cm_anim_block
+desc: initiates a camera animation
+param: cam_spec:string{"move" | "look" | "both"} anim_name:string
+============================================
+command: cm_anim
+desc: initiates a camera animation
+param: cam_spec:string{"move" | "look" | "both"} anim_name:string
+============================================
+command: env_broken
+desc: computes the number of objects in a range that have all their glass broken
+param: gq_ref:int [gq_endref:int | ]
+============================================
+var: fx_laser_width
+============================================
+command: powerup_reset
+desc: resets all placed powerups to their starting points
+param: 
+============================================
+command: weapon_reset
+desc: resets all unheld weapons to their starting state
+param: 
+============================================
+command: give_powerup
+desc: Gives a powerup to a character
+param: powerup_name:string [amount:int | ] [character:int | ]
+============================================
+var: wp_disable_fade
+============================================
+var: wp_fadetime
+============================================
+var: wp_hypostrength
+============================================
+var: recoil_return_speed
+============================================
+var: recoil_factor
+============================================
+var: recoil_max
+============================================
+var: recoil_base
+============================================
+var: recoil_edit
+============================================
+var: wp_kickable
+============================================
+var: debug_weapons
+============================================
+var: chr_show_lod
+============================================
+var: chr_show_bnv
+============================================
+command: hang
+desc: hangs the game (used for testing error handling)
+param: when:string{"now"}
+============================================
+command: crash
+desc: crashes the game (used for testing error handling)
+param: when:string{"now"}
+============================================
+command: print_state
+desc: prints an anim state
+param: state:int
+============================================
+command: print_type
+desc: prints an anim type 
+param: type:int
+============================================
+command: chr_who
+desc: lists all the players
+param: (null)
+============================================
+command: corpse_reset
+desc: resets corpses to their initial state
+param: 
+============================================
+command: make_corpse
+desc: makes a corpse
+param: corpse_name:string
+============================================
+command: fall_back
+desc: makes the player character fall front
+param: (null)
+============================================
+command: fall_front
+desc: makes the player character fall front
+param: (null)
+============================================
+command: chr_kill_all_ai
+desc: kills all the AI
+param: (null)
+============================================
+command: chr_draw_dot
+desc: draws a dot at a specified location
+param: (null)
+============================================
+command: chr_weapon
+desc: Sets the weapon for a give character
+param: chr_index:int [weapon_name:string | weapon_num:int]
+============================================
+command: chr_set_class
+desc: Sets the character class of a specific character
+param: chr_index:int [class_name:string | class_index:int]
+============================================
+command: chr_display_combat_stats
+desc: Displays the characters combat stats
+param: chr_index:int
+============================================
+command: chr_main_class
+desc: Sets the main characters class
+param: [class_name:string | class_index:int]
+============================================
+command: chr_location_settocamera
+desc: Sets the location of any character to the camera location
+param: chr_index:int
+============================================
+command: chr_location
+desc: Sets the location of any character
+param: chr_index:int [[loc_x:float loc_y:float loc_z:float] | ]
+============================================
+command: goto
+desc: Sets the location of the player character
+param: [[loc_x:float loc_y:float loc_z:float] | ]
+============================================
+command: chr_disarm
+desc: Disarms a character or everyone
+param: chr_index:int
+============================================
+command: chr_health
+desc: Sets character's health
+param: chr_index:int [hit_points:int | ]
+============================================
+command: chr_focus
+desc: Selects what character to control
+param: chr_index:int
+============================================
+var: wp_pow_adjustment
+============================================
+var: wp_scale_adjustment
+============================================
+var: chr_mini_me_amount
+============================================
+var: chr_big_head_amount
+============================================
+var: chr_auto_aim_dist
+============================================
+var: chr_auto_aim_arc
+============================================
+var: chr_aim_width
+============================================
+var: chr_block_angle
+============================================
+var: chr_collision_grow
+============================================
+var: cm_lookspring_percent
+============================================
+var: chr_debug_target
+============================================
+var: chr_show_movement
+============================================
+var: chr_lod
+============================================
+var: chr_death_fade_frames
+============================================
+var: chr_death_fade_start
+============================================
+var: saved_film_character_offset
+============================================
+var: gs_show_corpses
+============================================
+var: wp_force_no_scale
+============================================
+var: wp_force_half_scale
+============================================
+var: wp_force_scale
+============================================
+var: chr_big_head
+============================================
+var: marketing_line_off
+============================================
+var: chr_disable_melee
+============================================
+var: chr_debug_collision
+============================================
+var: chr_print_sound
+============================================
+var: chr_debug_sphere
+============================================
+var: chr_debug_overlay
+============================================
+var: chr_debug_characters
+============================================
+var: chr_draw_aiming_vector
+============================================
+var: chr_draw_facing_vector
+============================================
+var: chr_active
+============================================
+var: chr_enable_collision
+============================================
+var: chr_debug_aiming_screen
+============================================
+var: chr_debug_impacts
+============================================
+var: gs_show_shadows
+============================================
+var: chr_corpse_fade_offscreen
+============================================
+var: show_laser_env_collision
+============================================
+var: show_chr_env_collision
+============================================
+var: chr_mini_me
+============================================
+var: chr_draw_all_characters
+============================================
+var: chr_pin_character
+============================================
+var: chr_draw_weapon
+============================================
+var: chr_debug_trigger_quad
+============================================
+var: chr_collision_box
+============================================
+var: debug_impacts
+============================================
+var: chr_debug_fall
+============================================
+var: chr_debug_pathfinding
+============================================
+var: saved_film_loop
+============================================
+var: chr_weapon_auto_aim
+============================================
+var: debug_gun_behavior
+============================================
+var: debug_scripts
+============================================
+var: debug_triggers
+============================================
+var: door_drawframes
+============================================
+var: footstep_flash
+============================================
+var: chr_debug_footsteps_verbose
+============================================
+var: chr_debug_footsteps
+============================================
+var: chr_all_active
+============================================
+var: chr_disable_visactive
+============================================
+var: spatial_footsteps
+============================================
+command: tr_stop_lookup
+desc: bla bla bla
+param: 
+============================================
+command: tr_write_lookup
+desc: bla bla bla
+param: file_name:string
+============================================
+command: tr_write_collection
+desc: bla bla bla
+param: collection_name:string file_name:string
+============================================
+command: tr_write_animation
+desc: bla bla bla
+param: anim_name:string file_name:string
+============================================
+var: ai2_debug_showsettingIDs
+============================================
+var: ai2_debug_localmove_lines
+============================================
+var: ai2_debug_localpathfinding
+============================================
+var: ai2_debug_localmovement
+============================================
+var: ai2_showintersections
+============================================
+var: ai2_boss_battle
+============================================
+var: ai2_barabbas_run
+============================================
+var: ai2_spacing_weights
+============================================
+var: ai2_spacing_cookies
+============================================
+var: ai2_spacing_enable
+============================================
+var: ai2_melee_weightcorrection
+============================================
+var: ai2_stopignoring_time
+============================================
+var: ai2_stopignoring_count
+============================================
+var: ai2_chump_stop
+============================================
+var: ai2_ignore_player
+============================================
+var: ai2_deaf
+============================================
+var: ai2_blind
+============================================
+var: ai2_printspawn
+============================================
+var: ai2_showsounds
+============================================
+var: ai2_showlinetochar
+============================================
+var: ai2_showjoblocations
+============================================
+var: ai2_showhealth
+============================================
+var: ai2_shownames
+============================================
+var: ai2_showfights
+============================================
+var: ai2_showlocalmelee
+============================================
+var: ai2_showfiringspreads
+============================================
+var: ai2_showprojectiles
+============================================
+var: ai2_showlos
+============================================
+var: ai2_showlasers
+============================================
+var: ai2_showtargeting
+============================================
+var: ai2_showprediction
+============================================
+var: ai2_showvision
+============================================
+var: ai2_showcombatranges
+============================================
+var: ai2_showastar
+============================================
+var: ai2_showactivationpaths
+============================================
+var: ai2_showconnections
+============================================
+var: ai2_showpathfindingerrors
+============================================
+var: ai2_showdynamicgrids
+============================================
+var: ai2_showgrids
+============================================
+var: ai2_showpaths
+============================================
+command: ai2_debug_makesound
+desc: causes the player to make a sound (alerts nearby AIs)
+param: [sound_type:string | ] [volume:float | ]
+============================================
+command: ai2_pathdebugsquare
+desc: selects a path square in the player's BNV for debugging
+param: x:int y:int
+============================================
+command: ai2_chump
+desc: creates a chump
+param: 
+============================================
+command: ai2_printbnvindex
+desc: prints the index of the player's BNV
+param: 
+============================================
+command: ai2_findconnections
+desc: finds all BNV connections from the player's location
+param: [distance:int | ]
+============================================
+command: ai2_showmem
+desc: shows AI memory usage
+param: 
+============================================
+command: ai2_followme
+desc: tells an AI to follow the player
+param: [ai_name:string | script_id:int | ]
+============================================
+command: ai2_lookatme
+desc: tells an AI to look at the player
+param: [ai_name:string | script_id:int | ]
+============================================
+command: ai2_comehere
+desc: tells an AI to come to the player
+param: [ai_name:string | script_id:int | ]
+============================================
+command: who
+desc: prints AIs that are nearby
+param: 
+============================================
+command: where
+desc: prints location of a character
+param: [ai_name:string | script_id:int | ]
+============================================
+command: ai2_report_verbose
+desc: tells an AI to report in verbosely
+param: [ai_name:string | script_id:int | ]
+============================================
+command: ai2_report
+desc: tells an AI to report in
+param: [ai_name:string | script_id:int | ]
+============================================
+command: killed_griffen
+desc: sets if we killed griffen
+param: murder:bool
+============================================
+command: powerup_spawn
+desc: creates a new powerup
+param: poweruptype:string flag:int
+============================================
+command: weapon_spawn
+desc: creates a new weapon
+param: weapontype:string flag:int
+============================================
+command: trigvolume_kill
+desc: kills all the characters inside a trigger volume
+param: trig_id:int
+============================================
+command: trigvolume_corpse
+desc: kills all the corpses inside a trigger volume
+param: trig_id:int
+============================================
+command: trigvolume_reset
+desc: reset a trigger volume to its level-load state
+param: name:string
+============================================
+command: trigvolume_trigger
+desc: fire off a trigger volume
+param: name:string type:string{"entry" | "inside" | "exit"} [ai_name:string | script_id:int | ]
+============================================
+command: trigvolume_setscript
+desc: set the script to call from a trigger volume
+param: name:string script:string type:string{"entry" | "inside" | "exit"}
+============================================
+command: trigvolume_enable
+desc: enable or disable a trigger volume
+param: name:string enable:int{0 | 1} [type:string{"all" | "entry" | "inside" | "exit"} | ]
+============================================
+command: trig_speed
+desc: sets a triggers speed
+param: trigger_id:int volume:float
+============================================
+command: trig_show
+desc: shows a trigger
+param: trigger_id:int
+============================================
+command: trig_hide
+desc: hides a trigger
+param: trigger_id:int
+============================================
+command: trig_reset
+desc: resets a trigger to non-triggered state
+param: trigger_id:int
+============================================
+command: trig_deactivate
+desc: deactivates a trigger
+param: trigger_id:int
+============================================
+command: trig_activate
+desc: activates a trigger
+param: trigger_id:int
+============================================
+command: turret_reset
+desc: resets a turret to initial state
+param: turret_id:int
+============================================
+command: turret_deactivate
+desc: deactivates a turret
+param: turret_id:int
+============================================
+command: turret_activate
+desc: activates a turret
+param: turret_id:int
+============================================
+command: console_reset
+desc: resets a console to initial state
+param: console_id:int
+============================================
+command: console_deactivate
+desc: deactivates a console
+param: console_id:int
+============================================
+command: console_activate
+desc: activates a console
+param: console_id:int
+============================================
+command: door_close
+desc: closes a door (may not stay open)
+param: door_id:int
+============================================
+command: door_open
+desc: opens a door (may not stay open)
+param: door_id:int
+============================================
+command: door_unlock
+desc: unlocks a door
+param: door_id:int
+============================================
+command: door_lock
+desc: locks a door
+param: door_id:int
+============================================
+command: door_unjam
+desc: unjams a door so characters can open it
+param: door_id:int
+============================================
+command: door_jam
+desc: jams a door in its current state
+param: door_id:int
+============================================
+command: reset_mechanics
+desc: resets all level mechanics (triggers, turrets, consoles, etc...) to initial state
+param: 
+============================================
+command: ai2_skill_delaymax
+desc: sets an AI's max delay between shots, in frames
+param: maxdelay:int
+============================================
+command: ai2_skill_delaymin
+desc: sets an AI's min delay between shots, in frames
+param: mindelay:int
+============================================
+command: ai2_skill_inaccuracy
+desc: sets an AI's shooting inaccuracy multiplier
+param: inaccuracy:float
+============================================
+command: ai2_skill_decay
+desc: sets an AI's grouping decay
+param: decay_amount:float
+============================================
+command: ai2_skill_error
+desc: sets an AI's grouping error
+param: error_amount:float
+============================================
+command: ai2_skill_bestangle
+desc: sets an AI's best aiming angle in degrees
+param: best_angle:float
+============================================
+command: ai2_skill_recoil
+desc: sets an AI's recoil compensation amount (0-1)
+param: recoil_compensation:float
+============================================
+command: ai2_skill_save
+desc: saves the shooting skill being edited out as a text file
+param: 
+============================================
+command: ai2_skill_revert
+desc: reverts the shooting skill being edited to the saved copy
+param: 
+============================================
+command: ai2_skill_show
+desc: shows the currently selected shooting skill
+param: 
+============================================
+command: ai2_skill_select
+desc: selects a shooting skill to edit
+param: char_class:string weapon_name:string
+============================================
+command: ai2_barabbas_retrievegun
+desc: makes barabbas retrieve his gun if it is lost
+param: [ai_name:string | script_id:int]
+============================================
+command: ai2_set_handlesilenterror
+desc: sets whether handled errors are silent
+param: handle_silent:bool [subsystem:string | ]
+============================================
+command: ai2_set_logerror
+desc: sets the level of errors to log to file
+param: error_level:string [subsystem:string | ]
+============================================
+command: ai2_set_reporterror
+desc: sets the level of errors to report at console
+param: error_level:string [subsystem:string | ]
+============================================
+command: ai2_lookatchar
+desc: tells an AI to look at a character
+param: [ai_name:string | script_id:int] [ai_name:string | script_id:int]
+============================================
+command: ai2_movetoflag
+desc: tells an AI to move to a flag
+param: [ai_name:string | script_id:int] flag_id:int [setfacing:string{"setfacing"} | ]
+============================================
+command: ai2_setmovementmode
+desc: sets an AI's current movement mode
+param: [ai_name:string | script_id:int] mode:string
+============================================
+command: ai2_makeignoreplayer
+desc: makes a single AI ignore the player
+param: [ai_name:string | script_id:int] on_off:int{0 | 1}
+============================================
+command: ai2_makedeaf
+desc: makes a single AI deaf
+param: [ai_name:string | script_id:int] on_off:int{0 | 1}
+============================================
+command: ai2_makeblind
+desc: makes a single AI blind
+param: [ai_name:string | script_id:int] on_off:int{0 | 1}
+============================================
+command: ai2_tripalarm
+desc: trips an alarm
+param: alarm_id:int [ai_name:string | script_id:int | ]
+============================================
+command: ai2_setalert
+desc: sets the alert state of an AI
+param: [ai_name:string | script_id:int] alert:string
+============================================
+command: ai2_forget
+desc: makes one or all AIs forget they saw anything
+param: [ai_name:string | script_id:int | ]  [forget_char:string | ]
+============================================
+command: ai2_attack
+desc: forces an AI to attack another character
+param: [ai_name:string | script_id:int] [target_name:string | target_script_id:int]
+============================================
+command: ai2_makeaware
+desc: makes an AI aware of another character
+param: [ai_name:string | script_id:int] [target_name:string | target_script_id:int]
+============================================
+command: ai2_panic
+desc: makes an AI panic or not panic
+param: [ai_name:string | script_id:int] timer:int
+============================================
+command: ai2_noncombatant
+desc: sets or clears an AI's non-combatant state
+param: [ai_name:string | script_id:int] non_combatant:int{0 | 1}
+============================================
+command: ai2_neutralbehavior
+desc: sets up an AI's neutral-interaction
+param: [ai_name:string | script_id:int] behavior:string
+============================================
+command: ai2_idle
+desc: tells an AI to become idle
+param: [ai_name:string | script_id:int]
+============================================
+command: ai2_doalarm
+desc: tells an AI to run for an alarm
+param: [ai_name:string | script_id:int] [console_id:int | ]
+============================================
+command: ai2_dopath
+desc: tells an AI to run a particular path
+param: [ai_name:string | script_id:int] path_name:string
+============================================
+command: ai2_setjobstate
+desc: tells an AI to take its current state as its job
+param: [ai_name:string | script_id:int]
+============================================
+command: ai2_inactive
+desc: forces an AI into inactive mode
+param: [ai_name:string | script_id:int]
+============================================
+command: ai2_active
+desc: forces an AI into active mode
+param: [ai_name:string | script_id:int]
+============================================
+command: chr_neutral
+desc: stops an AI from thinking for itself
+param: [ai_name:string | script_id:int] passive:int{0 | 1}
+============================================
+command: chr_freeze
+desc: stops an AI from thinking for itself
+param: [ai_name:string | script_id:int] passive:int{0 | 1}
+============================================
+command: ai2_passive
+desc: stops an AI from thinking for itself
+param: [ai_name:string | script_id:int] passive:int{0 | 1}
+============================================
+command: ai2_allpassive
+desc: stops all AIs from thinking for themselves
+param: passive:int{0 | 1}
+============================================
+command: ai2_kill
+desc: kills one or more AIs
+param: [param1:string | ] [param2:string | ]
+============================================
+command: ai2_spawnall
+desc: spawns all AI, even those not initially present
+param: 
+============================================
+command: ai2_spawn
+desc: creates and starts an AI from a character object
+param: ai_name:string [force_spawn:string{"force"} | ]
+============================================
+command: ai2_reset
+desc: resets AI as if start of level
+param: [reset_player:int | ]
+============================================
+command: chr_ultra_mode
+desc: enables ultra mode for a character
+param: [ai_name:string | script_id:int] on_off:int{0 | 1}
+============================================
+command: chr_death_lock
+desc: this character will not die too much
+param: [ai_name:string | script_id:int] on_off:int{0 | 1}
+============================================
+command: chr_shadow
+desc: turns of the shadow for this character
+param: [ai_name:string | script_id:int] on_off:int{0 | 1}
+============================================
+command: chr_wait_health
+desc: waits until a character's health falls below a value
+param: [ai_name:string | script_id:int] hit_points:int
+============================================
+command: chr_super
+desc: set's a character's super value
+param: [ai_name:string | script_id:int] super_amount:float
+============================================
+command: chr_pain
+desc: forces a character to play a pain sound
+param: [ai_name:string | script_id:int] pain_type:string
+============================================
+command: chr_poison
+desc: slowly poisons a character
+param: [ai_name:string | script_id:int] damage:int interval:int [initial_interval:int | ]
+============================================
+command: chr_peace
+desc: turns off fight mode
+param: [ai_name:string | script_id:int]
+============================================
+command: chr_inv_reset
+desc: clears a characters inventory
+param: [ai_name:string | script_id:int]
+============================================
+command: chr_vocalize
+desc: makes a character utter a vocalization
+param: [ai_name:string | script_id:int] type:string
+============================================
+command: chr_talk
+desc: causes a character to play a line of dialogue
+param: [ai_name:string | script_id:int] sound_name:string pre_pause:int post_pause:int [priority:string | ]
+============================================
+command: chr_unkillable
+desc: makes a character unkillable
+param: [ai_name:string | script_id:int] [on_off:int{0 | 1}]
+============================================
+command: chr_invincible
+desc: makes a character invincible
+param: [ai_name:string | script_id:int] [on_off:int{0 | 1}]
+============================================
+command: chr_unstoppable
+desc: makes a character unstoppable
+param: [ai_name:string | script_id:int] [on_off:int{0 | 1}]
+============================================
+command: chr_changeteam
+desc: changes a character's team
+param: [ai_name:string | script_id:int] team_name:string
+============================================
+command: chr_forceholster
+desc: forces a character to holster their weapon
+param: [ai_name:string | script_id:int] holster:int{0 | 1} [force_draw:int{0 | 1} | ]
+============================================
+command: chr_givepowerup
+desc: gives a character a powerup
+param: [ai_name:string | script_id:int] powerup:string [amount:int | ]
+============================================
+command: chr_giveweapon
+desc: gives a character a new weapon
+param: [ai_name:string | script_id:int] weapon_name:string
+============================================
+command: chr_full_health
+desc: sets a characters health to full by script id
+param: [ai_name:string | script_id:int]
+============================================
+command: chr_set_health
+desc: sets a characters health by script id
+param: [ai_name:string | script_id:int] hit_points:int
+============================================
+command: chr_dontaim
+desc: disables the weapon variant for a character
+param: [ai_name:string | script_id:int] on_off:int{0 | 1}
+============================================
+command: chr_weapon_immune
+desc: makes a character weapon immune
+param: [ai_name:string | script_id:int]
+============================================
+command: chr_boss_shield
+desc: turns on the boss shield for a character
+param: [ai_name:string | script_id:int]
+============================================
+command: chr_wait_animstate
+desc: waits for a character to reach a specific animation state
+param: (null)
+============================================
+command: chr_wait_animtype
+desc: waits for a character to play a specific animation type
+param: (null)
+============================================
+command: chr_wait_animation
+desc: waits for a character to play a specific animation
+param: (null)
+============================================
+command: chr_envanim_stop
+desc: stops any environment animation on a character
+param: [ai_name:string | script_id:int]
+============================================
+command: chr_envanim_block
+desc: plays an environment animation on a character and blocks
+param: [ai_name:string | script_id:int] anim:string [norotation:string{"norotation"} | ]
+============================================
+command: chr_envanim
+desc: plays an environment animation on a character
+param: [ai_name:string | script_id:int] anim:string [norotation:string{"norotation"} | ]
+============================================
+command: chr_animate_block
+desc: plays an animation on a character and blocks until done
+param: [ai_name:string | script_id:int] anim_name:string [num_frames:int | ] [interp_frames:int | ]
+============================================
+command: chr_animate
+desc: plays an animation on a character
+param: [ai_name:string | script_id:int] anim_name:string [num_frames:int | ] [interp_frames:int | ]
+============================================
+command: chr_holdkey
+desc: forces a character to hold a key down for some frames
+param: [ai_name:string | script_id:int] key_name:string num_frames:int
+============================================
+command: playback_debug
+desc: dumps stats for a playback film
+param: film_name:string
+============================================
+command: chr_playback_debug
+desc: dumps stats for a playback film
+param: film_name:string
+============================================
+command: playback_block
+desc: plays back a film and blocks until complete
+param: [ai_name:string | script_id:int] film_name:string [mode:string{"fromhere" | "interp"} | ] [num_frames:int | ]
+============================================
+command: chr_playback_block
+desc: plays back a film and blocks until complete
+param: [ai_name:string | script_id:int] film_name:string [mode:string{"fromhere" | "interp"} | ] [num_frames:int | ]
+============================================
+command: playback
+desc: plays back a film
+param: [ai_name:string | script_id:int] film_name:string [mode:string{"fromhere" | "interp"} | ] [num_frames:int | ]
+============================================
+command: chr_playback
+desc: plays back a film
+param: [ai_name:string | script_id:int] film_name:string [mode:string{"fromhere" | "interp"} | ] [num_frames:int | ]
+============================================
+command: ai2_takecontrol
+desc: makes the AI movement system take control of the player
+param: on_off:int{0 | 1}
+============================================
+command: chr_nocollision
+desc: disables collision for a character
+param: [ai_name:string | script_id:int] on_off:int{0 | 1}
+============================================
+command: chr_teleport
+desc: teleports a character to a flag
+param: [ai_name:string | script_id:int] flag_id:int
+============================================
+command: chr_facetoflag
+desc: snaps a character's facing to a flag's facing
+param: [ai_name:string | script_id:int] flag_id:int
+============================================
+command: chr_unlock_active
+desc: locks the character active
+param: [ai_name:string | script_id:int]
+============================================
+command: chr_lock_active
+desc: locks the character active
+param: [ai_name:string | script_id:int]
+============================================
+command: chr_delete
+desc: deletes a character
+param: [ai_name:string | script_id:int]
+============================================
+command: chr_create
+desc: creates a character from a .txt file
+param: script_id:int [start_create:string{"start"} | ]
+============================================
+command: cm_barabus
+desc: special camera for barabus
+param: [ai_name:string | script_id:int] away:float up:float time:int
+============================================
+command: difficulty
+desc: returns the difficulty level
+param: 
+============================================
+command: trigvolume_count
+desc: counts the number of people in a trigger volume
+param: trig_id:int
+============================================
+command: did_kill_griffen
+desc: returns if we did kill griffen
+param: 
+============================================
+command: chr_has_empty_weapon
+desc: returns if this character is holding a weapon that is empty
+param: [ai_name:string | script_id:int]
+============================================
+command: chr_has_lsi
+desc: records that the character has the lsi
+param: [ai_name:string | script_id:int]
+============================================
+command: chr_is_player
+desc: returns if this character is the player
+param: [ai_name:string | script_id:int]
+============================================
+command: cm_jello
+desc: toggles camera Jello(tm) mode
+param: mode:int{0 | 1 }
+============================================
+var: cm_jello_amt
+============================================
+var: cm_jello_radius
+============================================
+var: cm_canter_unarmed
+============================================
+var: cm_canter_weapon
+============================================
+var: cm_distance
+============================================
+var: cm_height
+============================================
+var: cm_plane_test
+============================================
+command: debug_env_anim
+desc: draws a line for an environment animation
+param: name:string
+============================================
+command: gs_fov_set
+desc: sets the field of view
+param: fov_degrees:float
+============================================
+command: gs_farclipplane_set
+desc: sets the far clipping plane
+param: plane:float
+============================================
+command: perf_prefix
+desc: sets the perf prefix
+param: (null)
+============================================
+var: gs_input_accel
+============================================
+var: save_point
+============================================
+var: draw_every_frame_multiple
+============================================
+var: chr_buffer_size
+============================================
+var: gs_screen_shot_reduce
+============================================
+var: sync_debug
+============================================
+var: fast_lookup
+============================================
+var: debug_consoles
+============================================
+var: ob_show_debug
+============================================
+var: gs_show_environment
+============================================
+var: gs_sleep
+============================================
+var: show_performance_gsu
+============================================
+var: show_performance_gsd
+============================================
+var: show_performance
+============================================
+var: unstoppable
+============================================
+var: omnipotent
+============================================
+var: invincible
+============================================
+var: fast_mode
+============================================
+var: draw_every_frame
+============================================
+var: wait_for_key
+============================================
+var: single_step
+============================================
+var: gs_show_scripting_count
+============================================
+var: gs_show_physics_count
+============================================
+var: gs_show_object_count
+============================================
+var: env_show_quad_count
+============================================
+var: gs_stable_ear
+============================================
+var: chr_debug_handle
+============================================
+var: gs_show_ui
+============================================
+var: gs_show_objects
+============================================
+var: gs_show_characters
+============================================
+var: gs_show_sky
+============================================
+var: gs_show_particles
+============================================
+command: ph_status
+desc: xxx
+param: 
+============================================
+var: ph_show_collisions
+============================================
+var: ph_active
+============================================
+var: ph_debug_keyforces
+============================================
+var: p3_debug_collision
+============================================
+var: p3_furniture_breakable
+============================================
+var: p3_everything_breakable
+============================================
+var: p3_glass_breakable
+============================================
+var: p3_show_env_collision
+============================================
+command: p3_daodan_disable
+desc: Disables parts of the daodan shield (for debugging)
+param: (null)
+============================================
+command: p3_stopall
+desc: Stops all environmental particles
+param: 
+============================================
+command: p3_startall
+desc: Creates and starts all environmental particles
+param: 
+============================================
+command: p3_writeusedparticles
+desc: Writes all particles used on this level to a text file
+param: 
+============================================
+command: p3_dumpparticles
+desc: Dump all particles to a text file
+param: 
+============================================
+command: p3_removedangerous
+desc: Removes all 'dangerous projectile' particles by making their lifetime expire
+param: 
+============================================
+command: p3_printtags
+desc: Prints out all environmental particles with tags
+param: 
+============================================
+command: particle
+desc: Sends a command to environmental particles with a given tag
+param: (null)
+============================================
+command: particle_temp_kill
+desc: Kills any temporary particles
+param: (null)
+============================================
+command: particle_temp_stop
+desc: Stops temporary-particle-creation mode
+param: (null)
+============================================
+command: particle_temp_start
+desc: Starts temporary-particle-creation mode
+param: (null)
+============================================
+command: p3_callevent
+desc: Triggers an event on all P3 particles of a specified class
+param: particle_class:string event_index:int
+============================================
+command: p3_count
+desc: Lists a count of P3 particles
+param: 
+============================================
+command: p3_killnearest
+desc: Kills the nearest P3 particle
+param: [no_recreate:bool | ]
+============================================
+command: p3_killall
+desc: Kills all P3 particles
+param: 
+============================================
+command: p3_spawn
+desc: Spawns a new P3 particle
+param: particle_class:string [velocity:float | ]
+============================================
+var: sound_show_debug
+============================================
+command: co_toggle_text
+desc: cycles console text color
+param: 
+============================================
+command: console_print
+desc: dumps all arguments
+param: 
+============================================
+command: co_show_all
+desc: Shows all registered variables and commands
+param: 
+============================================
+var: co_message_display
+============================================
+var: co_display
+============================================
+var: co_priority
+============================================
+var: co_fade_time
+============================================
+var: env_ray_number
+============================================
+var: env_highlight_gq
+============================================
+var: env_show_ghostgqs
+============================================
+var: env_show_octnode_gqs
+============================================
+var: env_show_leafnodes
+============================================
+var: env_show_octtree
+============================================
+var: env_drawfrustum
+============================================
+var: env_collision
+============================================
+var: env_drawvisonly
+============================================
+var: env_drawallgqs
+============================================
+var: env_show_rays
+============================================
+var: env_show_stairflagged
+============================================
+command: unbindall
+desc: removes all bindings
+param: 
+============================================
+command: unbind
+desc: removes a binding from a input function
+param: input_name:string
+============================================
+command: bind
+desc: binds an input to a function
+param: input_name:string to:string{"to"} input_function:string
+============================================
+var: li_center_cursor
+============================================
+command: m3_quality_set
+desc: sets the current graphics quality
+param: quality:string
+============================================
+command: m3_display_set
+desc: sets the active display mode
+param: device_index:int mode_index:int
+============================================
+command: m3_display_list
+desc: lists all the display modes
+param: 
+============================================
+command: m3_engine_set
+desc: sets the active engine
+param: geom_engine:int draw_engine:int
+============================================
+command: m3_geom_engine_list
+desc: lists all the engines
+param: 
+============================================
+command: m3_draw_engine_list
+desc: lists all the engines
+param: 
+============================================
+var: m3_buffer_clear
+============================================
+var: m3_double_buffer
+============================================
+var: m3_zcompareon
+============================================
+var: m3_texture
+============================================
+var: m3_fill_solid
+============================================
+var: m3_shade_vertex
+============================================
+var: m3_clear_color
+============================================
+command: dump_docs
+desc: Shows all registered variables and commands
+param: 

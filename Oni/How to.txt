@@ -1,0 +1,140 @@
+Oni does not work with Windows XP and later versions of Windows. An unofficial patch/mod for the game called Oni Anniversary Edition exists which fixes this problem.
+It also removes the cd check and allows various mods to be installed.
+
+
+1. Mount and install the game. Do not install OpenGL.
+
+2. Install Oni Anniversary Edition and initialize it. Oni AE also disables cd-check.
+
+3. Download and install the selected mods, and launch the game from Oni Installer or Oni\AE\Oni.exe
+
+IMPORTANT NOTE
+
+If you want to disable weapon auto targeting and weapon fade, copy the IGMD folder into Oni\GameDataFolder and overwrite.
+Every time you press the install button in AE installer the IGMD folder gets overwritten so you have to copy paste the folder again.
+
+NOTES
+
+- The command prompt is not visible on some of the higher resolutions. To see it, lower down the resolution.
+
+- Anisotropic filtering x16 and Anti-Aliasing options can not be set in-game but they can be set in the graphics card control panel
+
+
+
+
+
+
+
+-------------------------------------------------
+How to get Oni working on Windows 7
+--------------------------------------------------
+Oni does not work with Windows XP and later versions of Windows. An unofficial patch/mod for the game called Oni Anniversary Edition exists which fixes this problem.
+It also removes the cd check and allows various mods to be installed.
+
+1. Mount Oni.iso with Daemon Tools
+2. Open the Oni.iso drive folder
+3. Click ONISETUP.exe
+4. Click next and install.
+5. The installation will ask to install an OpenGL driver. Click no
+6. The installation will ask to register. Click no
+7. The installation will ask to create a shortcut on the desktop. Click yes or no
+8. The ProgramData/Microsoft/Windows/Start Menu/Programs/Oni folder will open. Close the folder
+9. The installation will finish and the installation menu will prompt to be closed
+9. Copy and paste the "Edition" folder into the "Program Files (x86)/Oni" folder
+10. Navigate to "Program Files (x86)/Oni/Edition/install" and click on AEInstaller.exe
+11. AE Installer will ask to globalize. Click yes. This needs to be done only once
+12. Wait for the globalization to finish. Once it finishes, choose one or more mods from the menu. Click install. Once done, close the window
+IMPORTANT NOTE: At least one mod must be selected for the Anniversary Edition to work.
+
+There are additional mods that can be installed using the AE Installer that does not come with the Anniversary Edition package. To install these mods. Copy and paste their folders into the Oni/Edition/updates folder
+13. Relaunch the AE Installer and checkmark the new mods and click install. Close the window.
+14. Launch the game from Oni/Edition/Oni.exe
+Set the games resolution. Up to 1920x1080 is supported. Higher resolutions may also be supported.
+The BSL files for the Prone mod go into "Oni\Edition\GameDataFolder\IGMD\". Prone mod allows (only) Konoko and the striker to go prone. To enter the prone position as Konoko press WALK + RIGHT, as Striker press RUN + SLIDE. Some rifles have a zoom feature when prone.
+IMPORTANT NOTE:The game does not have a built in option to allow anisotropic filtering or anti-aliasing but these features can be activated in the graphics card settings menu.
+IMPORTANT NOTE: The anniversary edition fix or improve certain things but may also create bugs and is not perfect. A few sound files seems to be missing or has a problem which returns an error, this doesn't break the game though.
+IMPORTANT NOTE: The command prompt is not visible on some of the higher resolutions. To see it, lower the resolution.
+IMPORTANT NOTE: Auto aiming with weapons is enabled by default, however, auto aiming does not work on long range targets. To disable auto aiming, add "chr_weapon_auto_aim= 0" right under the main function into each "_main.bsl" file found in the IGMD folder. There are 14.
+IMPORTANT NOTE: Dropped weapons, loaded or empty disappear after a short period of time if dropped to the ground. To disable this add "wp_disable_fade=1" right under the main function into each "_main.bsl" file found in the IGMD folder. There are 14.
+
+ADDITIONAL INFORMATION ON THE PRONE MOD FOR ONI ANNIVERSARY EDITION
+
+A few details:
+Some of you might know that there was already a prone mode by geyser (dec 2006), but without animations.
+This version has animations but therefore other limitations: the prone mode is limited to one player-controlled striker or konoko for each level.
+
+A general problem lies within the available animation types/states. There's no such thing as "prone_run_start", "prone_run_left", etc. So I had to abuse the "stand" stuff in new trac/tram files. 
+The prone character needs shapeshifting* to let you use real "stand" animations again. (* automatical done by BSL)
+
+Here are two videos so you can make a first judgement if you dis-/like this mod:
+ http://www.youtube.com/watch?v=_Ro_TSGuvBs (from v1.0 pack)
+ http://www.youtube.com/watch?v=vrvQjvV0OUA (from v1.0.2.x pack)
+
+Download link of the package, the BSL** files have to be installed by hand:
+ http://mods.oni2.net/node/119
+(** it goes into Oni\Edition\GameDataFolder\IGMD\...)
+
+How to enter prone mode
+   with Konoko: use WALK + RIGHT
+   with Striker: use RUN + SLIDE
+
+change log:
+v1.0.3 (13.03.2010) (a good part modded by EdT)
+ - adaptions for Konoko
+ - improvment of STR###_fw_prone_step_lt/rt 
+ - other diverse tweaks in anims and bsl such as better zoom and Konoko/Striker start choice
+
+v1.0.2 (25.02.2010)
+ - fixed files: TRAMSTRPIS/RIF_fw/bk_prone_step_rt/lt
+ - added them to TRAC (you can aim now while crawling forward)
+ - added support for glass breaking moves
+
+v1.0.1, OCF release (23.02.2010)
+ - changed striker's health level from 40 to 200 (also Konoko had always 200.)
+
+v1.0, YT release (31.01.2010)
+
+
+--------------------------------
+How to play Oni multiplayer
+--------------------------------
+As I haven't shown anything new to the Oni community lately, I figure I might as well release this for the half a dozen or so people on this forum who would be inclined to follow this.
+
+What you need:
+1. Two computers running the Edition [This is no longer correct. Use the DLL at http://www.gumby.oni2.net/daodan/binkw32.dll -I]
+2. Some sort of networked connection (wired is preferred)
+
+Preparation:
+1. Make sure both copies of AE are running the same packages [or just use vanilla Oni. -I]
+2. delete Edition\GameDataFolder\IGMD\state
+3. Run Oni (windowed mode)
+3.5 If you get a REALBINK error, download this and put it next to the other dll: http://gumby.oni2.net/AE/realbink.dll
+4. Load up Regional State Building on both computers
+5. Activate dev mode (press F1, type x, close the menu)
+6. Press F6, this kills off any random AI currently in the game
+7. Type chr_draw_all_characters = 1 in the console (press ` to open the console), press enter.
+
+You have two choices at this point. Use the master server or use a Direct IP Connection.
+
+Using the master server [Mariusnet may no longer be available. -I]
+1. Go to http://www.mariusnet.com/ and register an account. Make sure to validate your email address.
+2. When ingame, after completing the above steps use the command login username password replacing the username and password with the ones you registered with mariusnet.
+3. If you wish to host a game, use the command host
+4. If you wish to join a game, you must wait until a game appears on this list. It will be labeled something like 1. Gumby's Game. Use the command join # where # is the number next to the game you wish to join.
+Warning: Flatline does not currently check to see if you are on the same level as the host you are connecting to. Watch out!
+
+Direct IP Connection
+On one computer (host):
+Type in host in the console, press enter. Note the ip it mentions.
+
+On the other (client):
+Type in connect "host's ip", press enter. The quotes are important!
+
+Notes:
+When you host, Flatline will attempt to forward the port 27777. This might not work. If you host and players still can't connect to you, try disabling unused connections in the Network Connections area in the Control Panel.
+
+You can add bots by using the addbot command.
+
+You can switch classes by using the command bind o to block then pressing block.
+'
+PUT binkw32.dll into AE folder

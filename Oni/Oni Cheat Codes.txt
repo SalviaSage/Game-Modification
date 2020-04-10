@@ -1,0 +1,62 @@
+    Bugs and Exploits
+    If you dont see it here, help us and send it in! 
+
+    Hex Cheats:
+    Open up the "persist.dat" file with your Hex Editor. Go to location 0x44 and change the value there to 07. Once that is done, to run the cheat codes press [F1] while in the game to open the menu and type in the cheats you want to use.
+    Also, cheats will be enabled once you win the game (without requiring the above hex edit). In order to enable cheat mode in Oni, hex editing must be done. Hex editing is an intermediate to advanced technique of editing a file. Always make a backup before editing any file in this way.
+
+    Cheat Codes:
+
+    Downloads:
+
+    Cheat Mode Enable
+
+    In order to enable cheat mode in Oni, hex editing must be done. This is an intermediate to advanced technique of editing a file. Always make a backup before editing any file in this way.
+
+    Open up the "persist.dat" file with your Hex Editor. Go to location 0x44 and change the value there to 07. Once that is done, to run the cheat codes press [F1] while in the game to open the menu and type in the cheats you want to use. Also, cheats will be enabled once you win the game (without requiring the above hex edit).
+
+    Code Result
+    liveforever God Mode
+    shapeshifter Change Characters (F8 Key)
+    touchofdeath Omnipotence
+    canttouchthis Unstoppable
+    fatloot Ammo plus Health
+    glassworld Glass Furniture
+    winlevel Win Level
+    loselevel Lose Level
+    bighead Big Head Mode
+    minime Mini Mode
+    superammo Super Ammo Mode
+    reservoirdogs AIs Fight With Each Other
+    roughjustice Gatling Guns Mode
+    chenille Daodan Power Mode
+    behemoth Godzilla Mode
+    elderrune Regeneration
+    moonshadow Phase Cloak
+    munitionfrenzy Weapons Locker Created
+    fistsoflegend Fists of Legend Mode
+    killmequick Ultra Mode
+    carousel Slow Motion
+    thedayismine Developer Mode
+
+    Developer Mode Cheats Press ` to bring up the command prompt once in Developer Mode. Then you may type in these cheats:
+
+    Code Result
+    door_ignore_locks = 1 Unlocks All Doors
+    ai2_kill Kills All Nearby AI Units
+    chr_nocollision 0 1 No Clipping Mode
+    dump_docs Displays All Command Prompt Docs
+    [F7] Cycle Through Available Weapons
+    [F8] Change Character
+    [F9] Start Recording
+    [F10] Stop Recording
+    [F11] Playback Recording
+    [Control][Shift][Y] FPS Counter
+    [Control][Shift][G] Toggle SlowMo/Normal Modes
+    [Control][Shift][S] Toggle Textures
+    [Control][Shift][B] Show Current Opponent Logic
+
+    Command Line Codes:
+
+    Text Editor Cheats:
+    Note: Back up the original files before proceeding with the following set of codes. 
